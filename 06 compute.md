@@ -1,0 +1,61 @@
+- Categories
+	- IaaS for virtual machines (Amazon EC2)
+	- Serverless computing (AWS Lambda)
+	- Container-based computing (Amazon ECS/EKS, AWS Fargate)
+	- PaaS for web applications (AWS Elastic Beanstalk)
+- Amazon EC2
+	- Amazon Elastic Compute Cloud
+	- Virtual machines in the cloud
+	- AMI / Amazon Machine Image
+		- AWS Region specific
+	- Launch Instance Wizard (nine key decisions)
+		- AMI (4 choices: Quick Start, My AMIs, AWS Marketplace, Community AMIs)
+		- Instance type (determines: memory, processing  power, disk space and disk type, network performance, GPUs?; five categories)
+		- Network settings (VPC, subnet, public IP address?)
+		- IAM role 
+		- User data (by default script executes the first time the instance starts)
+		- Storage options (Amazon EBS, Amazon EC2 Instance Store, Amazon EFS, connect to Amazon S3)
+		- Tags
+		- Security group
+		- Key pair
+	- Amazon EC2 instance lifecycle
+		- Launch → Pending → Running <→ Rebooting
+		- Running → Stopping → Stopped
+		- Running → Shutting-down → Terminated
+	- When an instance is stopped and then started again: The public IPv4 address and external DNS hostname will change. Elastic IP address can be used for persistent public IPv4 address.
+	- Instance metadata
+		- `curl http://169.254.169.254/latest/meta-data` or /user-data
+- Amazon EC2 Cost Optimization
+	- Different pricing models
+		- For different workloads
+		- ![[Pasted image 20240603234006.png]]
+	- Four pillars of cost optimization
+		- Right size
+		- Increase elasticity
+		- Optimize pricing model
+		- Optimize storage choices
+- Container basics: method of operating system virtualization
+	- ![[Pasted image 20240603234812.png]]
+	- Docker
+	- Kubernetes
+- Amazon ECS
+	- Amazon Elastic Container Service
+	- Task definition (blueprint)
+	- Do you want to manage the Amazon ECS cluster that runs the containers?
+		- If yes, Amazon ECS cluster backed by Amazon EC2 (granular control)
+		- If no, Amazon ECS cluster backed by AWS Fargate (easier to maintain, agile)
+- Amazon EKS
+	- Amazon Elastic Kubernetes Service
+	- Certified Kubernetes conformant
+- Amazon ECR
+	- Amazon Elastic Container Registry
+- AWS Lambda
+	- Serverless computing; event-driven
+	- AWS Lambda event sources
+		- Push: Amazon API Gateway
+		- Poll: Amazon SQS
+		- Invoke directly from console, AWS SDK, or AWS CLI
+	- Function configuration: Function code, Dependencies, Execution role
+- AWS Elastic Beanstalk
+	- Managed service for web applications
+	- 

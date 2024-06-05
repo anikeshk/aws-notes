@@ -1,0 +1,75 @@
+- Network
+	- Subnets
+	- Router or Switch
+	- Machines
+		- IP Address
+			- IPv4
+			- IPv6
+			- Classless Inter-Domain Routing (CIDR)
+				- Network identifier (routing prefix) (fixed).Host identifier(flexible)/how many bits are fixed
+				- 192.0.2.0/24
+![[Pasted image 20240531200031.png]]
+
+- [[Amazon Virtual Private Cloud]]
+	- VPC Wizard
+	- Default VPC is created at account creation; for testing not for prod
+	- “logically separated” section of the AWS Cloud
+- Subnets
+	- Belong to an availability zone
+	- Can be public or private
+- IP addressing
+	- When you create a VPC you assign it to an IPv4 CIDR block (IPv6 is also supported)
+	- Cannot change the address range after you create the VPC
+	- largest IPv4 CIDR block size is /16; smallest IPv4 CIDR block size is /28
+	- CIDR blocks of subnets cannot overlap in one VPC
+- Subnets
+	- Reserved IP address
+	- ![[Pasted image 20240531200819.png]]
+	- Private IP address is automatically assign
+	- Public IP address can be manually assigned or automatically assigned using auto-assign settings
+	- Elastic IP address
+		- Associated with an AWS account
+		- Can be allocated and remapped anytime
+- Elastic network interface (ENI)
+	- Is a virtual network interface that you can attach to an instance
+	- Attributes follow when it is reattached to a new instance
+	- Each instance in your VPC has a default network interface
+	- Cannot detach the primary default ENI; can attach additional ENIs
+- Route tables and routes
+	- Set of rules or routes that you can configure to direct network traffic from your subnet
+	- By default, every route table contains a local route for communication within the VPC
+	- Each subnet must be associated with a route table
+	- Default route table cannot be changed; new rules can be added
+	- One subnet → one route table; one route table can have multiple subnets associated
+- Internet Gateways
+	- Route public internet traffic to/from VPC
+- Network Address Translation (NAT) Gateway
+	- Allows private subnet to communicate with public internet
+- Network ACLs
+	- Subnet level
+	- Default: allow all inbound and outbound IPv4 traffic
+	- Are stateless
+- Security Groups
+	- Virtual firewall for inbound/outbound traffic rules
+	- Instance level
+	- Default: allow all outbound IPv4 traffic and deny all inbound IPv4
+	- Are stateful
+- ![[Pasted image 20240531233128.png]]
+- VPC Sharing
+	- Sharing VPC between AWS Accounts in the same AWS Organization
+- VPC Peering
+	- Privately route traffic between two VPCs
+- AWS Site-to-Site VPN
+	- What McAfee shifted to?
+- VPC Endpoint
+	- Gateway endpoints (Amazon S3 and Amazon DynamoDB)
+	- Interface endpoints (AWS PrivateLink)
+- AWS Transit Gateway
+- Amazon Route 53
+	- DNS resolution
+	- Routing policies
+	- ![[Pasted image 20240531233305.png]]
+- Amazon CloudFront
+	- CDN service
+	- Edge locations
+	- Regional edge cache
