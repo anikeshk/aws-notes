@@ -25,3 +25,19 @@
 		- One Zone-Infrequent Access
 		- Glacier
 		- Glacier Deep Archive
+	- Buckets
+		- Bucket path-style URL endpoint: need to access objects
+		- Bucket virtual-hosted-style URL endpoint: using bucket for public website
+- Amazon EFS
+	- Amazon Elastic File System
+	- Shared storage, supports Network File System
+	- 5 steps for implementation
+	- ![[Pasted image 20240605093005.png]]
+- Amazon S3 Glacier
+	- Data archiving service
+	- Three terms: Archive, Vault, Vault access policy and Vault lock policy
+	- Access (base on time to retrieve): Standard, Bulk, Expedited
+	- Amazon S3 lifecycle policies: enable you to delete or move objects based on age
+- ![[Pasted image 20240605201922.png]]
+- ![[Pasted image 20240605202229.png]]
+- 
