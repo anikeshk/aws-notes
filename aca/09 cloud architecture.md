@@ -1,0 +1,18 @@
+- AWS Well-Architected Framework
+- Guide for designing infrastructures that are secure, high-performing, resilient, and efficient. 
+- Five pillars
+- Operational Excellence pillar
+- Security pillar
+- Reliability pillar
+- Performance Efficiency pillar
+- Cost Optimization pillar
+- Reliability and availability
+	- ![[Pasted image 20240607194319.png]]
+	- Reliability = Mean Time Between Failures (MTBF) = MTTF (To Failure) + MTTR (To Repair)
+	- Availability = Percentage of uptime = Number of 9s 
+- AWS Trusted Advisor
+	- Cost optimization
+	- Performance
+	- Security
+	- Fault Tolerance
+	- Service Limits

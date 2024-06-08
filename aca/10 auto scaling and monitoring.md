@@ -1,0 +1,14 @@
+- Elastic Load Balancing
+	- Types of load balances
+	- ![[Pasted image 20240607195925.png]]
+	- With ALB and NLB, you register targets in target groups.
+	- With Classic, you register instances.
+- Amazon CloudWatch
+	- Monitor AWS resources or applications that run on AWS
+	- Standard metrics or custom metrics
+	- Alarms
+	- Events
+	- ![[Pasted image 20240607200944.png]]
+- Amazon EC2 Auto Scaling
+	- Auto Scaling groups
+	- ![[Pasted image 20240607201549.png]]
