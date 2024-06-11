@@ -1,0 +1,14 @@
+- People: Customer (decision maker), Architect, Building crew
+- Roles of a cloud architect: plan, research, and build
+- Pillars of the AWS Well-Architected Framework
+- [[09 cloud architecture]]
+- AWS Well-Architected Tool
+- ![[Pasted image 20240610204318.png]]
+- AWS Infrastructure
+	- AWS Regions
+		- 2 or more Availability Zones
+			- 1 to 6 Data Centers
+	- AWS Local Zones (extension of a Region)
+	- AWS Points of Presence
+		- Edge locations
+		- Regional edge cache

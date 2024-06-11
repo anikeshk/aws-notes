@@ -1,0 +1,21 @@
+- [[04 cloud security]]
+- Cloud security principles
+	- AWS shared responsibility model (customer:aws::in:of)
+	- Implement a strong identity foundation
+	- Protect data in transit and at rest
+	- Apply security at all layers (defense in depth)
+	- Keep people away from data
+	- Maintain traceability
+	- Prepare for security events
+	- Automate security best practices
+	- Principle of least privilege
+- Authentication vs Authorization
+	- ![[Pasted image 20240610234150.png]]
+- AWS Identity and Access Management (IAM)
+	- ![[Pasted image 20240610234314.png]]
+	- IAM role: can be assumed, temporary credentials
+	- Protect the root user.
+	- Determining permissions at the time of request
+	- ![[Pasted image 20240610235008.png]]
+	- Identity based vs resource based policies
+	- 
