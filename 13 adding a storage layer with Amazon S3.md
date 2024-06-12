@@ -1,0 +1,10 @@
+- [[07 storage]]
+- Amazon S3
+	- Types: Block, File, Object (S3)
+- Multipart upload: Splitting objects and reassembling for large objects
+- S3 Transfer Acceleration
+- AWS Transfer Family
+- Versioning
+- Mark delete vs delete (owner)
+- ![[Pasted image 20240611194805.png]]
+- AWS S3 Inventory
